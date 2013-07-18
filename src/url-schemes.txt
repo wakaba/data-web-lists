@@ -1,0 +1,915 @@
+## URL schemes
+
+## application  - Heavily coupled with specific application program
+## browser      - Used by Web browsers for internal use or extensions
+## conflict     - There are multiple independent definitions or usages
+## contact      - Contact address such as email address or tel number
+## ill-formed   - Syntactically broken as URL scheme name
+## local        - Resource in user's local environment
+## registerable - whitelisted schemes <http://c.whatwg.org/#whitelisted-scheme>
+## scriptable   - May contain insecure data within the URL
+## web-core     - Important URL schemes of the Web platform
+## wildcard     - Wildcard "*" is used for URL scheme name
+
+:
+  ill-formed
+_:
+  ill-formed
+aaa:
+aaas:
+moz-abdirectory:
+moz-abldapdirectory:
+moz-abmdbdirectory:
+about:
+  web-core
+  scriptable
+  browser
+action:
+addbook:
+address:
+addressbook:
+adiumxtra:
+adobe:
+acap:
+afp:
+afs:
+  local
+aggregator:
+aim:
+ajp:
+akeita:
+anon-ftp:
+ant:
+antlib:
+apex:
+app:
+applescript:
+  scriptable
+application:
+x-oma-application:
+applications:
+apps:
+ascpt:
+asin:
+ar:
+archive:
+arib:
+arib-dc:
+arib-file:
+arib-ic:
+arib-node:
+arib-rtl:
+arib-seg:
+arib-seggrp:
+arib-series:
+artifact:
+atlantik:
+attachment:
+  browser
+audiocd:
+auth:
+x-avefront:
+aw:
+balancer:
+bathyscaphe:
+bbs2ch:
+  application
+bcp:
+bibp:
+x-birdfeed:
+  application
+bitcoin:
+  registerable
+bk:
+blob:
+  web-core
+bluray:
+btspp:
+buffer:
+builtin:
+bum:
+bz2:
+bzip:
+bzip2:
+caf%C3%E8:
+  ill-formed
+callto:
+  contact
+cap:
+castanet:
+cat+:
+x-catalog:
+cdo:
+cdv:
+cfh:
+cgi:
+  local
+cgi+:
+  local
+chrome:
+  browser
+  conflict
+chrome-extension:
+  browser
+chrome-extension-resource:
+  browser
+chrome-resource:
+  browser
+cht:
+chttp:
+cid:
+cifs:
+class:
+clr-namespace:
+clsid:
+cmd:
+cockatoo:
+cocon:
+cocon2:
+coffee:
+comgooglemaps:
+compress.bzip2:
+compress.zlib:
+configuration:
+content:
+context:
+  multiple
+control:
+corbaloc:
+corbaname:
+cpan:
+crid:
+crypto:
+cso:
+csta:
+cti:
+cvs+ext:
+cvs+pserver:
+cvs+ssh:
+daap:
+darcs+http:
+darcs+ssh:
+data:
+  web-core
+  scriptable
+datagram:
+dav:
+daytime:
+dc:
+dcp.tcp.pft:
+dict:
+diff:
+disk:
+dix:
+dns:
+doc:
+doi:
+dpi:
+dpml:
+druby:
+dsm-cc:
+org.davic.dsmcc:
+dtn:
+dvb:
+dvd:
+echofon:
+  application
+echofonpro:
+  application
+ecmascript:
+  scriptable
+  web-core
+ed2k:
+  application
+eid:
+emacs:
+  application
+email:
+enp:
+enum:
+esl:
+esx:
+-moz-evil:
+exec:
+  local
+ext:
+fab:
+  application
+fax:
+  contact
+fca:
+feed:
+feeds:
+feedsearch:
+file:
+  local
+  web-core
+moz-filedata:
+filedesc:
+filerun:
+finger:
+firebird:
+  application
+firefox:
+  application
+firefoxhtml:
+  application
+firefoxurl:
+  application
+firefox.url:
+  application
+fish:
+floppy:
+fonts:
+freenet:
+ftp:
+  web-core
+ffcpl:
+ftps:
+ftss:
+fubscript:
+  application
+  scriptable
+further:
+furtherstudy:
+gcf:
+ge:
+geo:
+  registerable
+gfarm:
+gg:
+ghelp:
+  application
+gimage:
+git:
+git+http:
+git+ssh:
+github-windows:
+  application
+gizmoproject:
+glass:
+go:
+google:
+google.streetview:
+  application
+googlechrome:
+  application
+googlechromes:
+  application
+gopher:
+gridlog.udp:
+groupwise:
+groupwises:
+gsiftp:
+gsm-sms:
+gsx:
+gumby:
+gz:
+gzip:
+h320:
+h323:
+h324:
+halflife:
+har:
+hashed:
+hatenabookmark:
+  application
+hcp:
+hdfs:
+hdl:
+help:
+hftp:
+hnews:
+horb:
+hsftp:
+htdb:
+htt:
+http:
+  web-core
+h++p:
+ht*tp:
+  ill-formed
+http+aes:
+httpmd:
+httpmu:
+https:
+  web-core
+https+aes:
+httpsy:
+httpu:
+hydra:
+hyperv:
+iax:
+iax2:
+ical:
+icap:
+ichat:
+moz-icon:
+  browser
+iioploc:
+iiopname:
+ilu:
+im:
+  contact
+  registerable
+imap:
+imap-message:
+imaps:
+import:
+info:
+intl:
+ior:
+ipp:
+irc:
+  registerable
+ircs:
+  registerable
+iric.beep:
+iris:
+iris.beep:
+iris.xpc:
+iris.xpcs:
+iris.lwz:
+itms:
+itmss:
+itpc:
+its:
+jabber:
+  contact
+jar:
+  web-core
+java:
+javabean:
+javarmi:
+javascript:
+  web-core
+  scriptable
+jdbc:
+jeditresource:
+jms:
+jnp:
+jrap:
+jscript:
+  web-core
+  scriptable
+x-jsd:
+kafe:
+%4Baffee:
+kaffe:
+kafo:
+kahva:
+kahvi:
+kava:
+kdx:
+kdxtracker:
+keynote:
+keyparc:
+keyword:
+kfs:
+klik:
+k%C3%A1va:
+  ill-formed
+kn:
+kohv:
+koffee:
+koffie:
+lastfm:
+launchpro:
+launchplus:
+launchx:
+ldap:
+ldapi:
+ldaps:
+lib:
+lid:
+lifn:
+line:
+link:
+livescript:
+  scriptable
+livewire:
+  scriptable
+local-file:
+  local
+local:
+  local
+localapp:
+  local
+location:
+lrq:
+lsidres:
+lxc:
+lynx*:
+  wildcard
+lynxcgi:
+  local
+lynxexec:
+  local
+lynxhist:
+lynxkeymap:
+lynxprog:
+mac:
+magnet:
+  registerable
+mail:
+mailbox:
+mailserver:
+mailto:
+  contact
+  web-core
+  registerable
+main:
+man:
+x-man-path:
+market:
+mbone:
+mbox:
+md5:
+media:
+x-message-id:
+metainfo:
+mhtml:
+  broowser
+mid:
+mime:
+mk:
+  browser
+mkdaijirin:
+mms:
+  contact
+  registerable
+mmst:
+mmsto:
+  contact
+mmsu:
+mocha:
+  browser
+  scriptable
+modem:
+mono:
+mountpoint:
+moz-nullprincipal:
+mrml:
+ms:
+ms-app:
+msbd:
+ms-help:
+ms-its:
+msn:
+  conflict
+  contact
+msnim:
+  contact
+msrp:
+msrps:
+mssql:
+mssql+pyodbc:
+mtqp:
+mupdate:
+music:
+mvn:
+myhttp:
+myportal:
+myrdf:
+mysql:
+mysql+mysqldb:
+mysql+oursql:
+natsulion:
+nicojk:
+  application
+net.tcp:
+x-netlog-udp:
+netrek:
+news:
+  registerable
+newsglue:
+newsmonster-subscription:
+newspost:
+newsrc:
+newsreply:
+nfs:
+  local
+nifty:
+nis:
+njar:
+nntp:
+  registerable
+note:
+notes:
+ns:
+nsfw:
+nudp:
+nvram:
+nvrams:
+oai:
+ocap:
+onepassword3:
+opaquelocktoken:
+open:
+openvz:
+openvz+unix:
+openvz+ssh:
+openvz+tcp:
+opera:
+  browser
+operaemail:
+  application
+oracle:
+oracle+cx_oracle:
+ormi:
+osc.tcp:
+osc.udp:
+outlook:
+owc:
+p:
+p2p.udp:
+pack:
+page:
+paint:
+password:
+path:
+pcast:
+peercast:
+peripheral:
+perldoc:
+person:
+pg:
+pgrid:
+pgrids:
+phantomjs:
+phone:
+  contact
+php:
+pict:
+pin:
+pirol:
+plucker:
+pnm:
+pop:
+pop3:
+pop3s:
+pos:
+postgresql:
+postgresql+pg8000:
+postgresql+psycopg2:
+postgresql+zxjdbc:
+ppaction:
+prefs:
+pres:
+print:
+printdb:
+printer:
+programs:
+project:
+prospero:
+protozilla:
+proxylet:
+pseudo-cgi:
+  local
+psion:
+psyc:
+puppet:
+purl:
+pydoc:
+pyimp:
+qemu:
+qemu+unix:
+qemu+ssh:
+qemu+tcp:
+quicktime:
+qname:
+q%C3%A6hv%C3%A6:
+  ill-formed
+rdar:
+rdf:
+rdp:
+realplayer.autoplay.6:
+  application
+redirect:
+remembrance:
+remote:
+res:
+  browser
+res-hint:
+resource:
+  browser
+resources:
+respec:
+rest:
+rlan:
+rlogin:
+rmi:
+rom:
+romsound:
+root:
+rsh:
+rss:
+rsync:
+rtmp:
+rtsp:
+rtspt:
+rtspu:
+rvp:
+rwhois:
+rx:
+s3:
+s3n:
+scp:
+sdp:
+search:
+search-ms:
+secondlife:
+seeq:
+service:
+session:
+settings:
+sftp:
+sgn:
+sherlock:
+shell:
+sieve:
+simp:
+simplytweet:
+  application
+sip:
+  registerable
+  contact
+sips:
+  contact
+site:
+siteoforigin:
+skype:
+  contact
+  application
+skype4com:
+  application
+sleipnir:
+  application
+slpro:
+smb:
+  local
+sms:
+  contact
+  registerable
+smsto:
+  contact
+  registerable
+smtp:
+smtps:
+snews:
+snewspost:
+snewsreply:
+snmp:
+soap:
+soap.beep:
+soap.beeps:
+soap.mail:
+soap.udp:
+socks:
+socks4:
+socks4a:
+socks5:
+soldat:
+sqlite:
+srm:
+ssdp:
+ssh:
+  registerable
+ssl:
+sssp:
+stats:
+steam:
+storage:
+stream:
+subethaedit:
+svn:
+svn+file:
+svn+http:
+svn+https:
+svn+rsh:
+svn+ssh:
+swappedout:
+swipemint:
+  application
+sylfeed:
+  application
+syncml:
+sysimage:
+system:
+t120:
+tag:
+tann:
+tar:
+tar+file:
+tar+ftp:
+tar+http:
+task:
+tbz2:
+tcl:
+  scriptable
+tcp:
+tdb:
+tdl:
+teamspeak:
+tel:
+  registerable
+  contact
+tel-av:
+  contact
+telephone:
+  contact
+telnet:
+temp:
+tftp:
+tgz:
+theme:
+themes:
+thismessage:
+thtp:
+thumbnail:
+tip:
+tls:
+tmp:
+tn3270:
+toc:
+todo:
+tomtomhome:
+  application
+topic:
+trash:
+hrn:
+tp:
+ttp:
+ttps:
+tumblr:
+tv:
+tweetbot:
+  application
+tweetie:
+  application
+com.atebits.tweetie2:
+  application
+com.atebits.tweetie2+2.0.0:
+  application
+tweetings:
+  application
+tweetingslite:
+  application
+twit:
+  application
+twitbird:
+  application
+twitbirdfree:
+  application
+twitbirdpro:
+  application
+twitterfon:
+  application
+twitterfonpro:
+  application
+twitterrific:
+  application
+txmt:
+uddi:
+udg:
+udp:
+udp6:
+udplisten:
+ugomemo:
+um:
+uml:
+uml+unix:
+uml+ssh:
+uml+tcp:
+unix:
+unreal:
+upnp:
+uri:
+url:
+urn:
+  registerable
+x-urn:
+ut2004:
+uuid:
+vbox:
+vbox+unix:
+vbox+ssh:
+vbox+tcp:
+vbscript:
+  scriptable
+vcard-temp:
+vcd:
+vemmi:
+ventrilo:
+vidaud:
+video:
+videotex:
+view-rss:
+view-source:
+  browser
+viewsource:
+x-vloc:
+vmwareplayer:
+  application
+vmwarews:
+vmwarews+ssh:
+vmwarews+tcp:
+vnc:
+vnd.ms.radio:
+voc:
+voice:
+voicemail:
+vpx:
+vrmlscript:
+  scriptable
+vss:
+vtel:
+wais:
+webkit-fake-url:
+  browser
+wcap:
+web+*:
+  wildcard
+  registerable
+web3s:
+web3sbase:
+webcal:
+  registerable
+webdav:
+webdavs:
+webster:
+whatis:
+who:
+whodp:
+whois:
+whois++:
+widget:
+  browser
+winnytp:
+  application
+withever:
+wmq:
+wpn:
+ws:
+  web-core
+wsman:
+wss:
+  web-core
+wtai:
+  registerable
+www:
+wyciwtg:
+wysiwyg:
+  browser
+x-*:
+  wildcard
+xalan:
+xdbc:
+xen:
+xen+unix:
+xen+ssh:
+xen+tcp:
+xfire:
+xindice:
+xmldb:
+xmlns:
+xmlrpc.beep:
+xmlrpc.beeps:
+xmpp:
+  registerable
+  contact
+xpath:
+xri:
+xsltfs:
+xtd:
+x-exec:
+  local
+x-ferris:
+x-internal:
+x-schema:
+xxe-config:
+ymsgr:
+  contact
+z39.50:
+z39.50s:
+z39.50r:
+zeroconf:
+zip:
+zippy:
+zlib:
+%D9%82%D9%87%D9%88%D8%A9:
+  ill-formed
+%E5%92%96%E5%95%A1:
+  ill-formed
+%CE%BA%CE%B1%CF%86%CE%AD:
+  ill-formed
+%E0%A4%95%E0%A5%8C%E0%A4%AB%E0%A5%80:
+  ill-formed
+%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC:
+  ill-formed
+%EC%BB%A4%ED%94%BC:
+  ill-formed
+%D0%BA%D0%BE%D1%84%D0%B5:
+  ill-formed
+%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F:
+  ill-formed

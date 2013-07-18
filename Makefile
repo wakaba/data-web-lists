@@ -1,7 +1,6 @@
-all:
+all: deps json/url-schemes.json
 
 WGET = wget
-GIT = git
 
 deps: pmbp-install
 
@@ -13,3 +12,6 @@ pmbp-install: local/bin/pmbp.pl
 	perl local/bin/pmbp.pl --update-pmbp-pl
 	perl local/bin/pmbp.pl --install-module JSON \
 	     --create-perl-command-shortcut perl
+
+json/url-schemes.json: bin/url-schemes.pl src/url-schemes.txt
+	./perl bin/url-schemes.pl
