@@ -1,5 +1,6 @@
 use strict;
 use warnings;
+use Encode;
 
 my $Data = {};
 
@@ -12,6 +13,7 @@ while (<$file>) {
     $scheme = $1;
     $scheme =~ s/%([0-9A-Fa-f]{2})/pack 'C', hex $1/ge;
     $scheme =~ tr/A-Z/a-z/;
+    $scheme = decode 'utf-8', $scheme;
     if ($Data->{$scheme}) {
       die "Duplicate URL scheme: |$scheme|\n";
     }
@@ -25,5 +27,5 @@ while (<$file>) {
 
 use JSON;
 open my $json_file, '>', 'json/url-schemes.json' or die "$0: url-schemes.json: $!";
-print $json_file JSON->new->canonical->pretty->encode($Data);
+print $json_file JSON->new->canonical->pretty->utf8->encode($Data);
 close $json_file;

@@ -26,7 +26,9 @@
       }
    },
    "acap" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "action" : {
       "props" : {}
@@ -51,14 +53,17 @@
    },
    "afs" : {
       "props" : {
-         "local" : 1
+         "local" : 1,
+         "protocol" : 1
       }
    },
    "aggregator" : {
       "props" : {}
    },
    "aim" : {
-      "props" : {}
+      "props" : {
+         "contact" : 1
+      }
    },
    "ajp" : {
       "props" : {}
@@ -67,7 +72,9 @@
       "props" : {}
    },
    "anon-ftp" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "ant" : {
       "props" : {}
@@ -108,7 +115,9 @@
       "props" : {}
    },
    "arib-file" : {
-      "props" : {}
+      "props" : {
+         "local" : 1
+      }
    },
    "arib-ic" : {
       "props" : {}
@@ -200,15 +209,21 @@
       "props" : {}
    },
    "bz2" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1
+      }
    },
    "bzip" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1
+      }
    },
    "bzip2" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1
+      }
    },
-   "caf��" : {
+   "caf��" : {
       "props" : {
          "ill-formed" : 1
       }
@@ -222,7 +237,9 @@
       "props" : {}
    },
    "castanet" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "cat+" : {
       "props" : {}
@@ -268,16 +285,24 @@
       }
    },
    "cht" : {
-      "props" : {}
+      "props" : {
+         "browser" : 1,
+         "local" : 1
+      }
    },
    "chttp" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "cid" : {
       "props" : {}
    },
    "cifs" : {
-      "props" : {}
+      "props" : {
+         "local" : 1,
+         "protocol" : 1
+      }
    },
    "class" : {
       "props" : {}
@@ -301,7 +326,9 @@
       "props" : {}
    },
    "coffee" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "com.atebits.tweetie2" : {
       "props" : {
@@ -314,13 +341,19 @@
       }
    },
    "comgooglemaps" : {
-      "props" : {}
+      "props" : {
+         "application" : 1
+      }
    },
    "compress.bzip2" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1
+      }
    },
    "compress.zlib" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1
+      }
    },
    "configuration" : {
       "props" : {}
@@ -361,22 +394,32 @@
       "props" : {}
    },
    "cvs+ext" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "cvs+pserver" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "cvs+ssh" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "daap" : {
       "props" : {}
    },
    "darcs+http" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "darcs+ssh" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "data" : {
       "props" : {
@@ -385,13 +428,17 @@
       }
    },
    "datagram" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "dav" : {
       "props" : {}
    },
    "daytime" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "dc" : {
       "props" : {}
@@ -412,7 +459,9 @@
       "props" : {}
    },
    "dns" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "doc" : {
       "props" : {}
@@ -427,13 +476,17 @@
       "props" : {}
    },
    "druby" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "dsm-cc" : {
       "props" : {}
    },
    "dtn" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "dvb" : {
       "props" : {}
@@ -528,7 +581,9 @@
       "props" : {}
    },
    "filerun" : {
-      "props" : {}
+      "props" : {
+         "local" : 1
+      }
    },
    "finger" : {
       "props" : {}
@@ -562,21 +617,28 @@
       "props" : {}
    },
    "floppy" : {
-      "props" : {}
+      "props" : {
+         "local" : 1
+      }
    },
    "fonts" : {
       "props" : {}
    },
    "freenet" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "ftp" : {
       "props" : {
+         "protocol" : 1,
          "web-core" : 1
       }
    },
    "ftps" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "ftss" : {
       "props" : {}
@@ -616,16 +678,24 @@
       }
    },
    "gimage" : {
-      "props" : {}
+      "props" : {
+         "application" : 1
+      }
    },
    "git" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "git+http" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "git+ssh" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "github-windows" : {
       "props" : {
@@ -660,10 +730,15 @@
       }
    },
    "gopher" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1,
+         "web-core" : 1
+      }
    },
    "gridlog.udp" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "groupwise" : {
       "props" : {}
@@ -684,10 +759,14 @@
       "props" : {}
    },
    "gz" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1
+      }
    },
    "gzip" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1
+      }
    },
    "h++p" : {
       "props" : {}
@@ -719,7 +798,9 @@
       "props" : {}
    },
    "hdfs" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "hdl" : {
       "props" : {}
@@ -734,7 +815,9 @@
       "props" : {}
    },
    "horb" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "hrn" : {
       "props" : {}
@@ -755,31 +838,45 @@
    },
    "http" : {
       "props" : {
+         "protocol" : 1,
          "web-core" : 1
       }
    },
    "http+aes" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "httpmd" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "httpmu" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "https" : {
       "props" : {
+         "protocol" : 1,
          "web-core" : 1
       }
    },
    "https+aes" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "httpsy" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "httpu" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "hydra" : {
       "props" : {}
@@ -818,19 +915,25 @@
       }
    },
    "imap" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "imap-message" : {
       "props" : {}
    },
    "imaps" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "import" : {
       "props" : {}
    },
    "info" : {
-      "props" : {}
+      "props" : {
+         "conflict" : 1
+      }
    },
    "intl" : {
       "props" : {}
@@ -839,41 +942,61 @@
       "props" : {}
    },
    "ipp" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "irc" : {
       "props" : {
+         "protocol" : 1,
          "registerable" : 1
       }
    },
    "ircs" : {
       "props" : {
+         "protocol" : 1,
          "registerable" : 1
       }
    },
    "iric.beep" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "iris" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "iris.beep" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "iris.lwz" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "iris.xpc" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "iris.xpcs" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "itms" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "itmss" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "itpc" : {
       "props" : {}
@@ -928,13 +1051,19 @@
       }
    },
    "kafe" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "kaffe" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "kaffee" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "kafo" : {
       "props" : {}
@@ -973,10 +1102,14 @@
       "props" : {}
    },
    "koffee" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "koffie" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "kohv" : {
       "props" : {}
@@ -999,7 +1132,9 @@
       "props" : {}
    },
    "ldap" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "ldapi" : {
       "props" : {}
@@ -1133,6 +1268,7 @@
    },
    "mhtml" : {
       "props" : {
+         "archive" : 1,
          "broowser" : 1
       }
    },
@@ -1304,7 +1440,8 @@
    },
    "nfs" : {
       "props" : {
-         "local" : 1
+         "local" : 1,
+         "protocol" : 1
       }
    },
    "nicojk" : {
@@ -1323,6 +1460,7 @@
    },
    "nntp" : {
       "props" : {
+         "protocol" : 1,
          "registerable" : 1
       }
    },
@@ -1480,13 +1618,19 @@
       "props" : {}
    },
    "pop" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "pop3" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "pop3s" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "pos" : {
       "props" : {}
@@ -1652,19 +1796,27 @@
       "props" : {}
    },
    "rsync" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "rtmp" : {
       "props" : {}
    },
    "rtsp" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "rtspt" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "rtspu" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "rvp" : {
       "props" : {}
@@ -1682,7 +1834,9 @@
       "props" : {}
    },
    "scp" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "sdp" : {
       "props" : {}
@@ -1709,7 +1863,9 @@
       "props" : {}
    },
    "sftp" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "sgn" : {
       "props" : {}
@@ -1769,7 +1925,8 @@
    },
    "smb" : {
       "props" : {
-         "local" : 1
+         "local" : 1,
+         "protocol" : 1
       }
    },
    "sms" : {
@@ -1868,22 +2025,35 @@
       "props" : {}
    },
    "svn" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "svn+file" : {
-      "props" : {}
+      "props" : {
+         "local" : 1,
+         "protocol" : 1
+      }
    },
    "svn+http" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "svn+https" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "svn+rsh" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "svn+ssh" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "swappedout" : {
       "props" : {}
@@ -1917,22 +2087,33 @@
       "props" : {}
    },
    "tar" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1
+      }
    },
    "tar+file" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1,
+         "local" : 1
+      }
    },
    "tar+ftp" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1
+      }
    },
    "tar+http" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1
+      }
    },
    "task" : {
       "props" : {}
    },
    "tbz2" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1
+      }
    },
    "tcl" : {
       "props" : {
@@ -1974,10 +2155,14 @@
       "props" : {}
    },
    "tftp" : {
-      "props" : {}
+      "props" : {
+         "protocol" : 1
+      }
    },
    "tgz" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1
+      }
    },
    "theme" : {
       "props" : {}
@@ -2473,52 +2658,64 @@
       "props" : {}
    },
    "zip" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1
+      }
    },
    "zippy" : {
       "props" : {}
    },
    "zlib" : {
-      "props" : {}
+      "props" : {
+         "archive" : 1
+      }
    },
    "καφέ" : {
       "props" : {
-         "ill-formed" : 1
+         "ill-formed" : 1,
+         "protocol" : 1
       }
    },
    "кофе" : {
       "props" : {
-         "ill-formed" : 1
+         "ill-formed" : 1,
+         "protocol" : 1
       }
    },
    "قهوة" : {
       "props" : {
-         "ill-formed" : 1
+         "ill-formed" : 1,
+         "protocol" : 1
       }
    },
    "कौफी" : {
       "props" : {
-         "ill-formed" : 1
+         "ill-formed" : 1,
+         "protocol" : 1
       }
    },
    "กาแฟ" : {
       "props" : {
-         "ill-formed" : 1
+         "ill-formed" : 1,
+         "protocol" : 1
       }
    },
    "コーヒー" : {
       "props" : {
-         "ill-formed" : 1
+         "ill-formed" : 1,
+         "protocol" : 1
       }
    },
    "咖啡" : {
       "props" : {
-         "ill-formed" : 1
+         "ill-formed" : 1,
+         "protocol" : 1
       }
    },
    "커피" : {
       "props" : {
-         "ill-formed" : 1
+         "ill-formed" : 1,
+         "protocol" : 1
       }
    }
 }

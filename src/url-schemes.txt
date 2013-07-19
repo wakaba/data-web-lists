@@ -1,11 +1,13 @@
 ## URL schemes
 
 ## application  - Heavily coupled with specific application program
+## archive      - Archive and/or compression format
 ## browser      - Used by Web browsers for internal use or extensions
 ## conflict     - There are multiple independent definitions or usages
 ## contact      - Contact address such as email address or tel number
 ## ill-formed   - Syntactically broken as URL scheme name
 ## local        - Resource in user's local environment
+## protocol     - Resource retrevable by the protocol of the scheme
 ## registerable - whitelisted schemes <http://c.whatwg.org/#whitelisted-scheme>
 ## scriptable   - May contain insecure data within the URL
 ## web-core     - Important URL schemes of the Web platform
@@ -31,14 +33,18 @@ addressbook:
 adiumxtra:
 adobe:
 acap:
+  protocol
 afp:
 afs:
   local
+  protocol
 aggregator:
 aim:
+  contact
 ajp:
 akeita:
 anon-ftp:
+  protocol
 ant:
 antlib:
 apex:
@@ -56,6 +62,7 @@ archive:
 arib:
 arib-dc:
 arib-file:
+  local
 arib-ic:
 arib-node:
 arib-rtl:
@@ -89,14 +96,18 @@ buffer:
 builtin:
 bum:
 bz2:
+  archive
 bzip:
+  archive
 bzip2:
+  archive
 caf%C3%E8:
   ill-formed
 callto:
   contact
 cap:
 castanet:
+  protocol
 cat+:
 x-catalog:
 cdo:
@@ -116,9 +127,14 @@ chrome-extension-resource:
 chrome-resource:
   browser
 cht:
+  browser
+  local
 chttp:
+  protocol
 cid:
 cifs:
+  protocol
+  local
 class:
 clr-namespace:
 clsid:
@@ -127,9 +143,13 @@ cockatoo:
 cocon:
 cocon2:
 coffee:
+  protocol
 comgooglemaps:
+  application
 compress.bzip2:
+  archive
 compress.zlib:
+  archive
 configuration:
 content:
 context:
@@ -144,17 +164,24 @@ cso:
 csta:
 cti:
 cvs+ext:
+  protocol
 cvs+pserver:
+  protocol
 cvs+ssh:
+  protocol
 daap:
 darcs+http:
+  protocol
 darcs+ssh:
+  protocol
 data:
   web-core
   scriptable
 datagram:
+  protocol
 dav:
 daytime:
+  protocol
 dc:
 dcp.tcp.pft:
 dict:
@@ -162,14 +189,17 @@ diff:
 disk:
 dix:
 dns:
+  protocol
 doc:
 doi:
 dpi:
 dpml:
 druby:
+  protocol
 dsm-cc:
 org.davic.dsmcc:
 dtn:
+  protocol
 dvb:
 dvd:
 echofon:
@@ -207,6 +237,7 @@ file:
 moz-filedata:
 filedesc:
 filerun:
+  local
 finger:
 firebird:
   application
@@ -220,12 +251,16 @@ firefox.url:
   application
 fish:
 floppy:
+  local
 fonts:
 freenet:
+  protocol
 ftp:
   web-core
+  protocol
 ffcpl:
 ftps:
+  protocol
 ftss:
 fubscript:
   application
@@ -241,9 +276,13 @@ gg:
 ghelp:
   application
 gimage:
+  application
 git:
+  protocol
 git+http:
+  protocol
 git+ssh:
+  protocol
 github-windows:
   application
 gizmoproject:
@@ -257,7 +296,10 @@ googlechrome:
 googlechromes:
   application
 gopher:
+  web-core
+  protocol
 gridlog.udp:
+  protocol
 groupwise:
 groupwises:
 gsiftp:
@@ -265,7 +307,9 @@ gsm-sms:
 gsx:
 gumby:
 gz:
+  archive
 gzip:
+  archive
 h320:
 h323:
 h324:
@@ -276,27 +320,37 @@ hatenabookmark:
   application
 hcp:
 hdfs:
+  protocol
 hdl:
 help:
 hftp:
 hnews:
 horb:
+  protocol
 hsftp:
 htdb:
 htt:
 http:
   web-core
+  protocol
 h++p:
 ht*tp:
   ill-formed
 http+aes:
+  protocol
 httpmd:
+  protocol
 httpmu:
+  protocol
 https:
   web-core
+  protocol
 https+aes:
+  protocol
 httpsy:
+  protocol
 httpu:
+  protocol
 hydra:
 hyperv:
 iax:
@@ -313,25 +367,39 @@ im:
   contact
   registerable
 imap:
+  protocol
 imap-message:
 imaps:
+  protocol
 import:
 info:
+  conflict
 intl:
 ior:
 ipp:
+  protocol
 irc:
   registerable
+  protocol
 ircs:
   registerable
+  protocol
 iric.beep:
+  protocol
 iris:
+  protocol
 iris.beep:
+  protocol
 iris.xpc:
+  protocol
 iris.xpcs:
+  protocol
 iris.lwz:
+  protocol
 itms:
+  protocol
 itmss:
+  protocol
 itpc:
 its:
 jabber:
@@ -354,8 +422,11 @@ jscript:
   scriptable
 x-jsd:
 kafe:
+  protocol
 %4Baffee:
+  protocol
 kaffe:
+  protocol
 kafo:
 kahva:
 kahvi:
@@ -372,12 +443,15 @@ k%C3%A1va:
 kn:
 kohv:
 koffee:
+  protocol
 koffie:
+  protocol
 lastfm:
 launchpro:
 launchplus:
 launchx:
 ldap:
+  protocol
 ldapi:
 ldaps:
 lib:
@@ -430,6 +504,7 @@ x-message-id:
 metainfo:
 mhtml:
   broowser
+  archive
 mid:
 mime:
 mk:
@@ -489,11 +564,13 @@ newsrc:
 newsreply:
 nfs:
   local
+  protocol
 nifty:
 nis:
 njar:
 nntp:
   registerable
+  protocol
 note:
 notes:
 ns:
@@ -546,8 +623,11 @@ pirol:
 plucker:
 pnm:
 pop:
+  protocol
 pop3:
+  protocol
 pop3s:
+  protocol
 pos:
 postgresql:
 postgresql+pg8000:
@@ -605,16 +685,21 @@ root:
 rsh:
 rss:
 rsync:
+  protocol
 rtmp:
 rtsp:
+  protocol
 rtspt:
+  protocol
 rtspu:
+  protocol
 rvp:
 rwhois:
 rx:
 s3:
 s3n:
 scp:
+  protocol
 sdp:
 search:
 search-ms:
@@ -624,6 +709,7 @@ service:
 session:
 settings:
 sftp:
+  protocol
 sgn:
 sherlock:
 shell:
@@ -648,6 +734,7 @@ sleipnir:
 slpro:
 smb:
   local
+  protocol
 sms:
   contact
   registerable
@@ -683,11 +770,18 @@ storage:
 stream:
 subethaedit:
 svn:
+  protocol
 svn+file:
+  protocol
+  local
 svn+http:
+  protocol
 svn+https:
+  protocol
 svn+rsh:
+  protocol
 svn+ssh:
+  protocol
 swappedout:
 swipemint:
   application
@@ -700,11 +794,17 @@ t120:
 tag:
 tann:
 tar:
+  archive
 tar+file:
+  archive
+  local
 tar+ftp:
+  archive
 tar+http:
+  archive
 task:
 tbz2:
+  archive
 tcl:
   scriptable
 tcp:
@@ -721,7 +821,9 @@ telephone:
 telnet:
 temp:
 tftp:
+  protocol
 tgz:
+  archive
 theme:
 themes:
 thismessage:
@@ -895,21 +997,31 @@ z39.50s:
 z39.50r:
 zeroconf:
 zip:
+  archive
 zippy:
 zlib:
+  archive
 %D9%82%D9%87%D9%88%D8%A9:
   ill-formed
+  protocol
 %E5%92%96%E5%95%A1:
   ill-formed
+  protocol
 %CE%BA%CE%B1%CF%86%CE%AD:
   ill-formed
+  protocol
 %E0%A4%95%E0%A5%8C%E0%A4%AB%E0%A5%80:
   ill-formed
+  protocol
 %E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC:
   ill-formed
+  protocol
 %EC%BB%A4%ED%94%BC:
   ill-formed
+  protocol
 %D0%BA%D0%BE%D1%84%D0%B5:
   ill-formed
+  protocol
 %E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F:
   ill-formed
+  protocol
